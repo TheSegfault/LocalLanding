@@ -11,6 +11,8 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Local Landing Page</title>
 
+        <link rel="icon" type="image/png" href="img/favicon.png" />
+
         <!-- Bootstrap -->
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
@@ -25,28 +27,29 @@
     </head>
 
     <body>
-        <a href="http://caramel">Le-caramel.com localhost</a>
-        <a href="http://test">test localhost</a>
-
-
-        <div class="container theme-showcase" role="main">
-
-            <!-- Main jumbotron for a primary marketing message or call to action -->
-            <div class="jumbotron">
-                <h1>Coucou toi</h1>
-                <p>Choisis sur quoi tu veux travailler connardo</p>
+        <!-- Home Section -->
+        <div id="home">
+            <div class="container text-center">
+                <div class="content">
+                    <h4>You got the special power</h4>
+                    <hr>
+                    <div class="header-text btn">
+                        <h1><span id="head-title"></span></h1>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <!-- Portfolio -->
-            <section id="portfolio" class="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 col-lg-offset-1 text-center">
-                            <h2>Work</h2>
-                            <hr class="small">
-                            <div class="row">
-                                <div class="col-md-6">
-                                  <h3>le-caramel.com</h1>
+        <!-- Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2>Work</h2>
+                        <hr class="small">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>le-caramel.com</h1>
                                     <div class="portfolio-item txtOverImg">
                                         <a target="_blank" href="http://caramel">
                                             <img class="img-portfolio img-responsive" src="img/Caramel.png">
@@ -86,12 +89,25 @@
                     <!-- /.container -->
             </section>
 
+            <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="bower_components/jquery/dist/jquery.min.js"></script>
+            <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="js/typed.js"></script>
+
+            <script>
+          $(function(){
+              $("#head-title").typed({
+                strings: ["We make websites^1000", "24/7 available for hire^1000" ,"Web design with diffence^1000"],
+                typeSpeed: 100,
+                loop: true,
+                startDelay: 100
+              });
+          });
+        </script>
+
     </body>
 
 </html>
