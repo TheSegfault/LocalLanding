@@ -1,6 +1,6 @@
-# LocalLanding
+# Local Landing Page
 
-Working with different web project from the same machine is a pain without virtual hosts.
+Working on different web project from the same machine is a pain without virtual hosts.
 
 Virtual hosts is great but I like to have visually the choice on what I want to work depending on my mood.
 
